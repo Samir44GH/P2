@@ -1,0 +1,56 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+  }
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.titleNav {
+    display: flex;
+    justify-content: space-between;
+    width: 51.24653739612188vh;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: fangsong;
+    font-size: 12vh;
+    font-weight: 500;
+    transition: transform .5s;
+   
+}
+
+.title:hover {
+    transform: scale(1.6) rotate(30deg);
+}
+.navBarUl {
+    list-style: none;
+    font-size: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.navBarUlLiTitle {
+    transition: color 1s;
+    list-style: none
+    ;
+    text-decoration: none;color: black;
+    
+}
+
+.navBarUlLiTitle:hover, .navBarUlLiTitle:active{
+    color: #f92222;
+}
+ImgResto 
+{
+    width: 600px;
+    height: 200px;
+}
