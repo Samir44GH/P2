@@ -1,0 +1,14 @@
+@import url(header.css);
+@import url(main.css);
+@font-face {
+  font-family: "Zanzabar";
+  src: url(Zanzabar.otf) format("truetype");
+}
+body {
+  font-family: 'Zanzabar',"DM Sans", sans-serif;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+ 
+  
+}
