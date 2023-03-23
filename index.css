@@ -1,56 +1,236 @@
-body {
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
+@font-face {
+    font-family: "Zanzabar";
+    src: url(Zanzabar.otf)format('truetype');
   }
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
 .header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .titleNav {
-    display: flex;
-    justify-content: space-between;
-    width: 51.24653739612188vh;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  z-index: 100;
 }
 
 .title {
-    font-family: fangsong;
-    font-size: 12vh;
-    font-weight: 500;
-    transition: transform .5s;
-   
+  font-family: fangsong;
+  font-size: 12vh;
+  font-weight: 500;
+  animation: title 4000ms ease-in-out;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Zanzabar";
 }
 
-.title:hover {
-    transform: scale(1.6) rotate(30deg);
+.navBar {
+  width: 100%;
+  font-family: "Zanzabar";
 }
+
 .navBarUl {
-    list-style: none;
-    font-size: 5vh;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 0;
+  list-style: none;
+  font-size: 5vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0;
+  animation: navBarUl2 3000ms ease-in-out;
+  z-index: 10;
 }
 
 .navBarUlLiTitle {
-    transition: color 1s;
-    list-style: none
-    ;
-    text-decoration: none;color: black;
-    
+  transition: color 1s;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
-.navBarUlLiTitle:hover, .navBarUlLiTitle:active{
-    color: #f92222;
+.navBarUlLiTitle:hover,
+.navBarUlLiTitle:active {
+  color: #f92222;
 }
-ImgResto 
-{
-    width: 600px;
-    height: 200px;
+ImgResto {
+  width: 600px;
+  height: 200px;
+}
+@keyframes navBarUl {
+  from {
+    margin-left: 100%;
+    width: 100%;
+    opacity: 0.1;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes title2 {
+  from {
+    margin-right: 100%;
+    width: 100%;
+    opacity: 0.1;
+  }
+  to {
+    margin-left: 21%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(-15%);
+    margin-top: 35%;
+    width: 100%;
+    opacity: 0.3;
+    filter: blur(1rem);
+  }
+
+  25% {
+    transform: translateX(10%);
+    width: 100%;
+    opacity: 0.3;
+    filter: blur(1rem);
+  }
+  50% {
+    transform: translateX(-5%);
+    width: 100%;
+    opacity: 0.5;
+    filter: blur(0.5rem);
+  }
+  75% {
+    transform: translateX(5%);
+    width: 100%;
+    opacity: 0.7;
+    filter: blur(0.25rem);
+  }
+
+  100% {
+    transform: translateX(0%);
+    width: 100%;
+    opacity: 1;
+   
+  }
+}
+
+@keyframes navBarUl2 {
+  0% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.1;
+  }
+  5% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  10% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  15% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  20% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  25% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  30% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  35% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  40% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  45% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  55% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  60% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  65% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  70% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  75% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  80% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  85% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  90% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  95% {
+    transform: translateY(2%);
+    width: 100%;
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-2%);
+    width: 100%;
+    opacity: 1;
+  }
 }
