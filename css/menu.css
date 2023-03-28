@@ -1,0 +1,19 @@
+.listes {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+    width: 50%;
+}
+
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titreMenu {
+    text-align: center;
+}
+
+.imgPlate {
+    width: 30%;
+}
